@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Python by Example: Hello World</title>
+    <link rel=stylesheet href="site.css">
+  </head>
+  <script>
+      onkeydown = (e) => {
+          if (e.key == "ArrowRight") {
+              window.location.href = 'values';
+          }
+      }
+  </script>
+  <body>
+    <div class="example" id="hello-world">
+      <h2><a href="./">Python by Example</a>: Hello World</h2>
+      <table>
+        <tr>
+          <td class="docs">
+            <p>Our first program will print the classic &ldquo;Hello World !!!&rdquo;
+message. Here&rsquo;s the full source code.</p>
+
+          </td>
+          <td class="code leading">
+              <a href="https://trinket.io/python/a3413edd26"><img title="Run code" src="play.png" class="run" /></a><img title="Copy code" src="clipboard.png" class="copy" />
+              <pre class="chroma"><span class="nf">print</span><span class="p">(</span><span class="s">&#34;Hello World !!!&#34;</span><span class="p">)</span></pre>
+          </td>
+        </tr>
+      </table>
+      
+      <table>
+        <tr>
+          <td class="docs">
+            <p>To run the program, put the code in <code>hello-world.py</code> and use <code>python3</code> command.</p>
+          </td>
+          <td class="code leading">
+          <pre class="chroma">
+<span class="gp">$</span> python3 hello-world.py
+<span class="go">Hello World !!!</span></pre>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Now that we can run a basic Python programs, let&rsquo;s learn more about the language.</p>
+          </td>
+          <td class="code empty">
+          </td>
+        </tr>
+      </table>
+      
+      <p class="next">
+          Next example: <a href="values.html">Values</a>.<br/>
+          Home page: <a href="index.html">Home</a>.
+      </p>
+      
+      <p class="footer">
+        by <a href="https://code4projects.net">Salvatore D'Angelo</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/hello-world">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+      </p>
+    </div>
+    <script>
+      var codeLines = [];
+      codeLines.push('package main\u000A');codeLines.push('import \"fmt\"\u000A');codeLines.push('func main() {\u000A    fmt.Println(\"hello world\")\u000A}\u000A');codeLines.push('');codeLines.push('');codeLines.push('');codeLines.push('');
+    </script>
+    <script src="site.js" async></script>
+  </body>
+</html>
+

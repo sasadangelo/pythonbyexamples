@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Python by Example: Variables</title>
+    <link rel=stylesheet href="site.css">
+  </head>
+  <script>
+      onkeydown = (e) => {
+          if (e.key == "ArrowLeft") {
+              window.location.href = 'values';
+          }
+          if (e.key == "ArrowRight") {
+              window.location.href = 'constants';
+          }
+      }
+  </script>
+  <body>
+    <div class="example" id="variables">
+      <h2><a href="./">Python by Example</a>: Variables</h2>
+      
+      <table>
+        
+        <tr>
+          <td class="docs">
+            <p>In Python, <em>variables</em> are implicitly declared and used by
+the interpreter to e.g. check type-correctness. Python will infer the type of variables.</p>
+
+          </td>
+          <td class="code leading">
+            <a href="http://play.golang.org/p/iYyAIilyBRf"><img title="Run code" src="play.png" class="run" /></a><img title="Copy code" src="clipboard.png" class="copy" />
+              <pre class="chroma">
+a=1
+b=2*a
+c=3.0
+d=7.0/3.0
+</pre>          
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p><em>Variables</em> could be of different types: integers, floats, strings, etc.
+You can use single or double quotes for strings and you can also define multi line strings.</p>
+          </td>
+          <td class="code leading">
+          <pre class="chroma">
+e=<span class="s">'This is a single quote string'</span>
+f=<span class="s">"This is a double quote string"</span>
+g=<span class="s">'''aaaaa
+bbbbb
+ccccc'''</span>
+</pre>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Python allows to declare mutiple assignments.  
+          </td>
+          <td class="code leading">
+            
+          <pre class="chroma">
+h = i = a
+</pre>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Print all the variables.            
+          </td>
+          <td class="code leading">
+            
+          <pre class="chroma">
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print(f)
+print(g)
+print(h)
+print(i)
+</pre>
+          </td>
+        </tr>
+        
+      </table>
+      
+      <table>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code">
+            
+          <pre class="chroma"><span class="gp">$</span> python3 variables.go
+<span class="go">1
+</span><span class="go">2
+</span><span class="go">3.0
+</span><span class="go">2.3333333333333335
+</span><span class="go">This is a single quote string
+</span><span class="go">This is a double quote strin
+</span><span class="go">aaaaa
+</span><span class="go">bbbbb
+</span><span class="go">ccccc
+</span><span class="go">1
+</span><span class="go">1</span></pre>
+          </td>
+        </tr>
+        
+      </table>
+      
+      
+      <p class="next">
+        Next example: <a href="for.html">For</a>.<br/>
+        Home page: <a href="index.html">Home</a>.
+      </p>
+      
+      <p class="footer">
+        by <a href="https://code4projects.net">Salvatore D'Angelo</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/variables">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+      </p>
+    </div>
+    <script>
+      var codeLines = [];
+      codeLines.push('');codeLines.push('package main\u000A');codeLines.push('import \"fmt\"\u000A');codeLines.push('func main() {\u000A');codeLines.push('    var a \u003D \"initial\"\u000A    fmt.Println(a)\u000A');codeLines.push('    var b, c int \u003D 1, 2\u000A    fmt.Println(b, c)\u000A');codeLines.push('    var d \u003D true\u000A    fmt.Println(d)\u000A');codeLines.push('    var e int\u000A    fmt.Println(e)\u000A');codeLines.push('    f :\u003D \"apple\"\u000A    fmt.Println(f)\u000A}\u000A');codeLines.push('');
+    </script>
+    <script src="site.js" async></script>
+  </body>
+</html>
