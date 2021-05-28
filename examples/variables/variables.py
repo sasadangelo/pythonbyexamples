@@ -1,5 +1,5 @@
 # Python is a stricty typed programming language.
-# However, there is no need to declare the variable type.
+# However, there is no need to declare the variable type,
 # Python understand it from code.
 a=1
 b=2*a
@@ -10,19 +10,19 @@ b=2*a
 c=3.0
 d=7.0/3.0
 
-# String single line. In Python you can use single or double quotes.
+# To declare strings in Python you can use single or double quotes interchangeably.
 e='This is a single quote string'
 f="This is a double quote string"
 
-# String multi line. In Python it is possible to define string variables multi lines.
+# In Python it is possible to declare multi line strings.
 g='''aaaaa
 bbbbb
 ccccc'''
 
-# Multi assignment
+# Python supports multi assignment.
 h = i = a
 
-# Print variables
+# Print variables.
 print(a)
 print(b)
 print(c)
@@ -34,10 +34,7 @@ print(h)
 print(i)
 
 # Primitive types in Python are immutable.
-# Python doesn't allocate space for a variable. In Python
-# variables, even if they reference a primitive type,
-# is a reference. In the example above, Python allocate a space
-# where it store the value and the variable is only a label that referencea it.
-# This area referenced is immutable and cannot change. If I assign
-# to the variable another value, it will be stored in another area and the variable
-# will reference it.
+# Python doesn't allocate space for a variable, it simply
+# reference the area containing the value. This value cannot change.
+# If you assign to the variable another value, it simply refers to another
+# memory location.

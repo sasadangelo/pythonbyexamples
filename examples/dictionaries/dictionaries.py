@@ -63,3 +63,7 @@ print("---- Dictionary iteration")
 my_dict = {1: 'apple', 2: 'ball', 3: 'cherry'}
 for k in my_dict.keys():
     print(k, my_dict[k])
+
+# Dictionaries are not sliceable. If you want only a
+# subset of the dictionary containing only a subset of key
+# you need to create it by yourself.
