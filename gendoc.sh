@@ -1,1 +1,1 @@
-pycco examples/**/*.py -i -d public
+pycco examples/**/*.py -d public
